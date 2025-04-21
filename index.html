@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>K-pop Idol Manager</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>K-pop Idol Manager</h1>
+
+  <!-- CREATE FORM -->
+  <div id="createSection">
+    <h3>Add New Idol</h3>
+    <input type="text" id="nameInput" placeholder="Name">
+    <input type="text" id="groupInput" placeholder="Group">
+    <input type="text" id="positionInput" placeholder="Position">
+    <input type="number" id="debutYearInput" placeholder="Debut Year">
+    <input type="text" id="imageUrlInput" placeholder="Image URL">
+    <button id="addIdolBtn">Add Idol</button>
+    <div id="createMessage"></div>
+  </div>
+
+  <hr>
+
+  <!-- DISPLAY ALL -->
+  <div id="idolList"></div>
+
+  <!-- EDIT/DELETE -->
+  <div id="selectedIdolSection" style="display:none;">
+    <h3>Edit Idol</h3>
+    <input type="text" id="editGroupInput" placeholder="New Group">
+    <input type="text" id="editPositionInput" placeholder="New Position">
+    <button id="updateIdolBtn">Update Idol</button>
+    <button id="deleteIdolBtn">Delete Idol</button>
+    <div id="deleteMessage"></div>
+  </div>
+
+  <script src="idols.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
